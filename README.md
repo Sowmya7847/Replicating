@@ -14,39 +14,33 @@
 
         .image-container {
             width: 65%;
-            background: url('IMAGE_URL_HERE') no-repeat center center;
+            background: url('https://president-tailors.com/wp-content/uploads/2023/07/Business-Suit.webp') no-repeat center center;
             background-size: cover;
         }
 
         .login-container {
             width: 35%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #f4f4f4;
-        }
-
-        .login-box {
-            width: 80%;
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             background-color: white;
-            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
         }
 
-        .login-box h2 {
+        .login-container h2 {
             margin-bottom: 20px;
             text-align: center;
         }
 
-        .login-box label {
+        .login-container label {
             display: block;
             margin: 10px 0 5px;
             color: grey;
         }
 
-        .login-box input[type="text"],
-        .login-box input[type="password"] {
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
             width: 100%;
             padding: 10px;
             margin: 10px 0;
@@ -55,7 +49,7 @@
             background-color: #e6f7ff;
         }
 
-        .login-box button {
+        .login-container button {
             width: 100%;
             padding: 10px;
             background-color: #003366;
@@ -65,7 +59,7 @@
             cursor: pointer;
         }
 
-        .login-box button:hover {
+        .login-container button:hover {
             background-color: #002244;
         }
     </style>
@@ -73,16 +67,14 @@
 <body>
     <div class="image-container"></div>
     <div class="login-container">
-        <div class="login-box">
-            <h2>Login</h2>
-            <form>
-                <label for="username">Username</label>
-                <input id="username" type="text" placeholder="Enter the username" required />
-                <label for="password">Password</label>
-                <input id="password" type="password" placeholder="Enter the password" required />
-                <button type="submit">Submit</button>
-            </form>
-        </div>
+        <h2>Login</h2>
+        <form>
+            <label for="username">Username</label>
+            <input id="username" type="text" placeholder="Enter the username" required />
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Enter the password" required />
+            <button type="submit">Enter</button>
+        </form>
     </div>
 </body>
 </html>
